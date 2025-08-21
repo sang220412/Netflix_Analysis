@@ -126,7 +126,9 @@ def main():
     data_expanded.to_csv('netflix_expanded.csv', index=False)
     print("Exported exploded data to 'netflix_expanded.csv' for Tableau.")
 
-    
+    # data.to_csv('netflix_cleaned.csv', index=False)
+# print("Cleaned data saved to netflix_cleaned.csv")
+
     plot_content_type_distribution(data)
     plot_top_genres(data)
     plot_content_added_over_time(data)
@@ -138,5 +140,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-data.to_csv('netflix_cleaned.csv', index=False)
-print("Cleaned data saved to netflix_cleaned.csv")
